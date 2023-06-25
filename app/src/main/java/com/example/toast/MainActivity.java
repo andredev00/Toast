@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
 
-    @SuppressLint({"ResourceType", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
-    @SuppressLint("ResourceType")
     public void countToast(View view) {
         if (mShowCount != null) {
             mCount++;
